@@ -560,15 +560,6 @@ async def _(event):
             await sython.send_message(event.chat_id, f"ايديه : `{id}`")
 
 
-@sython.on(events.NewMessage(outgoing=True, pattern=r"\.المطور"))
-async def _(event):
- photo = await sython.get_profile_photos(DEVS[0])
-    await sython.send_file(event.chat_id, photo, caption=f'''
-     The best !
-      - @E_L_O_L_1
-''', reply_to=event)
-
-
 
 @sython.on(events.NewMessage(outgoing=True, pattern=r"\.البنك"))
 async def _(event):
